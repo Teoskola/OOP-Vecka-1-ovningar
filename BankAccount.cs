@@ -17,13 +17,13 @@ namespace OOP_Vecka_1_Övningar
         }
 
         //Metoder
-        public void Deposit(decimal amount) //metod för att sätta in pengar på kontot
+        public virtual void Deposit(decimal amount) //metod för att sätta in pengar på kontot
         {
             Console.WriteLine($"{amount} has been deposited to your account. your new balance is {balance + amount}.");
                   balance += amount; // Uppdaterar saldot efter insättning    
         }
 
-        public void Withdraw(decimal amount) //metod för att ta ut pengar från kontot
+        public virtual void Withdraw(decimal amount) //metod för att ta ut pengar från kontot
         {
             Console.WriteLine($"{amount} has been withdrawn from your account. your new balance is {balance - amount}.");
             if (amount > balance) //kontrollerar om det finns tillräckligt med pengar på kontot
